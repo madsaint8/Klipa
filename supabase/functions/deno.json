@@ -1,0 +1,10 @@
+
+{
+  "compilerOptions": {
+    "strict": true
+  },
+  "imports": {
+    "@supabase/supabase-js": "npm:@supabase/supabase-js@2",
+    "svix": "npm:svix@1.45.1"
+  }
+}

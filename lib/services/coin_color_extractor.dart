@@ -1,0 +1,108 @@
+import 'package:flutter/material.dart';
+
+class CoinColorExtractor {
+  static const Map<String, Color> brandColors = {
+    // ── Top 20 by market cap ─────────────────────────────────────────────────
+    'bitcoin':              Color(0xFFF7931A),
+    'ethereum':             Color(0xFF627EEA),
+    'tether':               Color(0xFF26A17B),
+    'binancecoin':          Color(0xFFF3BA2F),  // BNB
+    'bnb':                  Color(0xFFF3BA2F),  // alt id
+    'solana':               Color(0xFF9945FF),
+    'ripple':               Color(0xFF00AAE4),  // XRP
+    'xrp':                  Color(0xFF00AAE4),  // alt id
+    'usd-coin':             Color(0xFF2775CA),  // USDC
+    'usdc':                 Color(0xFF2775CA),  // alt id
+    'cardano':              Color(0xFF0033AD),
+    'dogecoin':             Color(0xFFC2A633),
+    'polkadot':             Color(0xFFE6007A),
+    'tron':                 Color(0xFFFF0013),
+    'shiba-inu':            Color(0xFFFF6B00),
+    'avalanche-2':          Color(0xFFE84142),
+    'wrapped-bitcoin':      Color(0xFFF7931A),
+    'wbtc':                 Color(0xFFF7931A),
+    'chainlink':            Color(0xFF2A5ADA),
+    'toncoin':              Color(0xFF0088CC),  // TON
+    'the-open-network':     Color(0xFF0088CC),
+    'matic-network':        Color(0xFF8247E5),
+    'polygon':              Color(0xFF8247E5),
+    'litecoin':             Color(0xFFBFBFBF),
+    'uniswap':              Color(0xFFFF007A),
+    'cosmos':               Color(0xFF2E3148),
+    'monero':               Color(0xFFFF6600),
+    'stellar':              Color(0xFF7B68EE),
+    'ethereum-classic':     Color(0xFF328332),
+    'filecoin':             Color(0xFF0090FF),
+    'aave':                 Color(0xFF2EBAC6),
+    'the-sandbox':          Color(0xFF00ADEF),
+    'decentraland':         Color(0xFFFF2D55),
+    'axie-infinity':        Color(0xFF0055D4),
+    'the-graph':            Color(0xFF6747ED),
+    'fantom':               Color(0xFF1969FF),
+    'near':                 Color(0xFF00C08B),
+    'near-protocol':        Color(0xFF00C08B),
+    'pepe':                 Color(0xFF479F45),
+    'okb':                  Color(0xFF2D60E8),
+    'bitcoin-cash':         Color(0xFF8DC351),
+    'internet-computer':    Color(0xFF29ABE2),
+    'aptos':                Color(0xFF2DD8A3),
+    'hedera-hashgraph':     Color(0xFF222222),
+    'hedera':               Color(0xFF222222),
+    'vechain':              Color(0xFF15BDFF),
+    'arbitrum':             Color(0xFF28A0F0),
+    'optimism':             Color(0xFFFF0420),
+    'sui':                  Color(0xFF6FBCF0),
+    'injective-protocol':   Color(0xFF00A3FF),
+    'render-token':         Color(0xFF0D0D0D),
+    'stacks':               Color(0xFF5546FF),
+    'immutable-x':          Color(0xFF17B5CB),
+    'immutable':            Color(0xFF17B5CB),
+    'mantle':               Color(0xFF000000),
+    'celestia':             Color(0xFF7B2BF9),
+    'sei-network':          Color(0xFF9E1414),
+    'kaspa':                Color(0xFF70C7BA),
+    'first-digital-usd':    Color(0xFF1352B0),
+    'dai':                  Color(0xFFF5AC37),
+    'maker':                Color(0xFF1AAB9B),
+    'lido-dao':             Color(0xFF00A3FF),
+    'rocket-pool':          Color(0xFFFF6600),
+    'frax':                 Color(0xFF000000),
+    'curve-dao-token':      Color(0xFFD9002B),
+    'convex-finance':       Color(0xFF000000),
+    'compound-governance-token': Color(0xFF00D395),
+    'balancer':             Color(0xFF1E1E1E),
+    'yearn-finance':        Color(0xFF006AE3),
+    'pancakeswap-token':    Color(0xFFD1884F),
+    'sushi':                Color(0xFFFA52A0),
+    '1inch':                Color(0xFF94A6C3),
+    'blur':                 Color(0xFFFF6600),
+    'gala':                 Color(0xFF0F1923),
+    'chiliz':               Color(0xFFCD0124),
+    'enjincoin':            Color(0xFF7866D5),
+    'decentralized-social': Color(0xFF3D5AF1),
+    'stepn':                Color(0xFF87E5A8),
+    'axelar':               Color(0xFF000000),
+    'osmosis':              Color(0xFF750BBB),
+    'kava':                 Color(0xFFFF433E),
+    'terra-luna-2':         Color(0xFF172852),
+    'flow':                 Color(0xFF00EF8B),
+    'theta-token':          Color(0xFF2AB8E6),
+    'elrond-erd-2':         Color(0xFF23F7DD),
+    'multiversx':           Color(0xFF23F7DD),
+    'neo':                  Color(0xFF00E599),
+    'iota':                 Color(0xFF242424),
+    'zilliqa':              Color(0xFF49C1BF),
+    'waves':                Color(0xFF0155FF),
+    'harmony':              Color(0xFF00AEE9),
+    'helium':               Color(0xFF474DFF),
+    'ankr':                 Color(0xFF356DF3),
+    'celo':                 Color(0xFFFCFF52),
+    'nervos-network':       Color(0xFF3CC68A),
+  };
+
+  static const Color _fallback = Color(0xFF6C757D);
+
+  static Color brandColor(String coinId) {
+    return brandColors[coinId.toLowerCase()] ?? _fallback;
+  }
+}
