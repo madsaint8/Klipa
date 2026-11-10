@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 # Klipa
 =======
-# paywave
 
 A new Flutter project.
 
