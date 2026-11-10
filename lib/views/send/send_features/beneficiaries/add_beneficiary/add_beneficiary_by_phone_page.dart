@@ -49,7 +49,7 @@ class _AddBeneficiaryByPhonePageState
           SnackBar(
             content: Text(
                 '${user['full_name']} added as beneficiary'),
-            backgroundColor: PayWaveTheme.primary,
+            backgroundColor: AppTheme.primary,
             behavior: SnackBarBehavior.floating,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10)),
@@ -82,7 +82,7 @@ class _AddBeneficiaryByPhonePageState
         title: const Text('Add by Phone',
             style: TextStyle(color: Colors.white)),
         centerTitle: true,
-        backgroundColor: PayWaveTheme.primary,
+        backgroundColor: AppTheme.primary,
         elevation: 0,
       ),
       body: ListView(
@@ -92,13 +92,13 @@ class _AddBeneficiaryByPhonePageState
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: PayWaveTheme.primary.withOpacity(0.07),
+              color: AppTheme.primary.withOpacity(0.07),
               borderRadius: BorderRadius.circular(14),
             ),
             child: const Row(
               children: [
                 Icon(Icons.info_outline,
-                    color: PayWaveTheme.primary, size: 20),
+                    color: AppTheme.primary, size: 20),
                 SizedBox(width: 10),
                  Expanded(
                   child: Text(
@@ -214,7 +214,7 @@ class _PhoneField extends StatelessWidget {
           hintText: '063 053 6013',
           hintStyle: TextStyle(color: Colors.grey[400]),
           prefixIcon: Icon(Icons.phone_iphone,
-              color: PayWaveTheme.primary, size: 22),
+              color: AppTheme.primary, size: 22),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(14),
             borderSide: BorderSide.none,
@@ -333,7 +333,7 @@ class _FoundUserCard extends StatelessWidget {
           const SizedBox(height: 12),
           CircleAvatar(
             radius: 36,
-            backgroundColor: PayWaveTheme.primary,
+            backgroundColor: AppTheme.primary,
             child: Text(_initials,
                 style: const TextStyle(
                     color: Colors.white,
@@ -409,7 +409,7 @@ class _NicknameField extends StatelessWidget {
           hintText: 'e.g. Mom, Work, Landlord',
           hintStyle: TextStyle(color: Colors.grey[400]),
           prefixIcon: Icon(Icons.label_outline,
-              color: PayWaveTheme.primary, size: 20),
+              color: AppTheme.primary, size: 20),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(14),
             borderSide: BorderSide.none,
@@ -438,7 +438,7 @@ class _ConfirmButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: isLoading ? null : onTap,
         style: ElevatedButton.styleFrom(
-          backgroundColor: PayWaveTheme.primary,
+          backgroundColor: AppTheme.primary,
           foregroundColor: Colors.white,
           elevation: 0,
           shape: RoundedRectangleBorder(

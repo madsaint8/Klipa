@@ -66,7 +66,7 @@ class Klipa extends ConsumerWidget {
             navigatorKey: navService.navigatorKey,
             debugShowCheckedModeBanner: false,
             title: AppTexts.appName,
-            theme: PayWaveTheme.lightTheme,
+            theme: AppTheme.lightTheme,
             initialRoute: AppRoutes.authWrapper,
             routes: AppRoutes.routes,
           ),

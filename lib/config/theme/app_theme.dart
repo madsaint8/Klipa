@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PayWaveTheme {
+class AppTheme {
   static const Color primary = Color(0xFF0057FF);
   static const Color background = Color(0xFFF4F6FA);
   static const Color card = Colors.white;

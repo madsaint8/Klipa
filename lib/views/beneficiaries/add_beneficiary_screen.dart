@@ -94,10 +94,10 @@ class _BeneficiaryCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(12),
                   decoration: BoxDecoration(
-                    color: PayWaveTheme.primary.withOpacity(0.1),
+                    color: AppTheme.primary.withOpacity(0.1),
                     borderRadius: BorderRadius.circular(14),
                   ),
-                  child: Icon(icon, color: PayWaveTheme.primary, size: 24),
+                  child: Icon(icon, color: AppTheme.primary, size: 24),
                 ),
                 const SizedBox(width: 16),
                 Expanded(

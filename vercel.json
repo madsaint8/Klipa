@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "echo Installing Flutter",
-  "buildCommand": "git clone --depth 1 --branch stable https://github.com/flutter/flutter.git $HOME/flutter && $HOME/flutter/bin/flutter config --enable-web && $HOME/flutter/bin/flutter pub get && $HOME/flutter/bin/flutter build web --release --no-tree-shake-icons",
+  "installCommand": "echo Installing Flutter SDK",
+  "buildCommand": "rm -rf .flutter-sdk && git clone --depth 1 --branch stable https://github.com/flutter/flutter.git .flutter-sdk && .flutter-sdk/bin/flutter config --enable-web && .flutter-sdk/bin/flutter pub get && .flutter-sdk/bin/flutter build web --release --no-tree-shake-icons",
   "outputDirectory": "build/web"
 }
